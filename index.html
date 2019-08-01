@@ -1,195 +1,137 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html>
+
 <head>
-    <title>sbz's resume</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sofian Brabez">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <!-- link rel="shortcut icon" href="favicon.ico" -->  
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Sofian Brabez</title>
+
+    <!-- Twitter Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha256-pl1bSrtlqtN/MCyW8XUTYuJCKohp9/iJESVW1344SBM=" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+    <!-- Common meta markup -->
+    <meta name="author" content="Sofian Brabez" />
+    <meta name="description" content="Personal website" />
+
+    <!-- Facebook Open Graph markup -->
+    <meta property="og:title" content="Sofian Brabez" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://6dev.net/" />
+    <meta property="og:image" content="https://6dev.net/resume/assets/images/profile.png" />
+
+    <!-- Twitter Cards markup -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sbrabez" />
+    <meta name="twitter:creator" content="@sbrabez" />
+    <meta name="twitter:title" content="Sofian Brabez" />
+    <meta name="twitter:image" content="https://6dev.net/resume/assets/images/profile.png" />
+
+    <style>
+        body {
+            padding-top: 2em;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:focus,
+        a:hover {
+            color: #f09228;
+            text-decoration: none;
+        }
+
+        .whoami a {
+            color: #2455c3;
+            text-decoration: underline;
+        }
+
+        .avatar {
+            width: 170px;
+            height: 170px;
+            border-radius: 180px;
+            border: 2px solid #ccc;
+            box-shadow: 0 0 20px -5px black;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+    </style>
+</head>
 
 <body>
-    <!-- a href="//github.com/sbz"><img style="position: absolute; top: 0; right: 0; border: 0;" src="//s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="~sbz"></a -->
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" height="100" width="100" src="assets/images/profile.png" alt="picture" />
-                <h1 class="name">Sofian Brabez</h1>
-                <h3 class="tagline">UNIX Enthusiast</h3>
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="">[undisclosed]</a></li>
-                    <li class="phone"><i class="fa fa-phone"></i><a href="">[undisclosed]</a></li>
-                    <li class="website"><i class="fa fa-globe"></i><a href="//6dev.net" target="//6dev.net">6dev.net</a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="//linkedin.com/in/sbrabez" target="//linkedin.com/in/sbrabez">sbrabez</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="//github.com/sbz" target="//github.com/sbz">sbz</a></li>
-                    <li class="twitter"><i class="fa fa-twitter"></i><a href="//twitter.com/sbrabez" target="//twitter.com/sbrabez">sbrabez</a></li>
-		    <li class="stackoverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i><a href="//stackoverflow.com/users/5455517/sbz">sbz</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
-                <div class="item">
-                    <h4 class="degree">MSc in Computer Science</h4>
-                    <h5 class="meta">University of Paris-Est</h5>
-                    <div class="time">2007 - 2009</div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-            
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>English <span class="lang-desc">(Proficient)</span></li>
-                    <li>French <span class="lang-desc">(Native)</span></li>
-                    <li>Spanish <span class="lang-desc">(Elementary)</span></li>
-                </ul>
-            </div><!--//interests-->
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Interests</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Jiu-jitsu, Brazilian Jiu-jitsu</li>
-                    <li>Travel</li>
-                    <li>Unix</li>
-                </ul>
-            </div><!--//interests-->
-            
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
-            
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-                <div class="summary">
-                    <p>Acquired experiences working previously in Financial environment (large scale production), Internet services (massive managed hosting), and
-		    Software editor (product development).</p>
-		    <p>I'm following <a href="//en.wikipedia.org/wiki/Unix_philosophy">UNIX philosophy principles</a> with <a href="//en.wikipedia.org/wiki/Site_reliability_engineering">SRE</a> mindset.</p>
-                </div><!--//summary-->
-            </section><!--//section-->
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Site Reliability Engineer</h3>
-                            <div class="time">2018 - current</div>
-                        </div><!--//upper-row-->
-			<div class="company"><a href="//www.gonitro.com">Nitro</a>, Dublin</div>
-                    </div><!--//meta-->
-                    <div class="details">
-			    <p></p>
-                    </div><!--//details-->
-                </div><!--//item-->
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Software Engineer</h3>
-                            <div class="time">2015 - 2017</div>
-                        </div><!--//upper-row-->
-			<div class="company"><a href="//www.ddn.com">DDN Storage</a>, Paris</div>
-                    </div><!--//meta-->
-                    <div class="details">
-			    <p>Product development, configuration management, distributed systems, file/block/object storage, kernel updates, clusters provisioning and management, DNS, monitoring, alerting, CentOS, Python.</p>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Operations Engineer</h3>
-                            <div class="time">2011 - 2015</div>
-                        </div><!--//upper-row-->
-			<div class="company"><a href="//www.nbs-system.com/en">NBS System</a>, Paris</div>
-                    </div><!--//meta-->
-                    <div class="details">
-			    <p>Managed hosting, production, configuration management, DNS, kernel releases maintenance, infrastructure, monitoring, alerting, internet, security defense and testing, websites, Debian, Python.</p>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Software Engineer</h3>
-                            <div class="time">2008 - 2011</div>
-                        </div><!--//upper-row-->
-			<div class="company"><a href="//www.wallix.com/en">Wallix</a>, Paris</div>
-                    </div><!--//meta-->
-                    <div class="details">
-			    <p>Product development, SSH, C, Debian, Python.</p>
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-2 order-md-last text-center">
+                    <a href="https://6dev.net/resume/assets/images/profile.png" target="_blank"><img src="https://6dev.net/resume/assets/images/profile.png" alt="Sofian Brabez"
+                            class="avatar"></a>
+                </div>
 
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Systems Engineer</h3>
-                            <div class="time">2006 - 2008</div>
-                        </div><!--//upper-row-->
-			<div class="company"><a href="//www.natixis.com">Natixis</a>, Paris</div>
-                    </div><!--//meta-->
-                    <div class="details">
-			    <p>Production, infrastructure, monitoring, alerting, UNIX, Redhat, Sun, Perl.</p>
-                    </div><!--//details-->
-                </div><!--//item-->
+                <!-- Social links -->
+                <div class="col-md-8 order-md-first">
+                    <h1><a href="/">Sofian Brabez</a></h1>
+                    <p>
+                        <a href="https://github.com/sbz" target="_blank">
+                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/sbrabez" target="_blank">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sbrabez" target="_blank">
+                            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:[undisclosed]" target="_blank">
+                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://stackoverflow.com/users/5455517/sbz" target="_blank">
+                            <i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </p>
 
-            </section><!--//section-->
-            
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-                <div class="intro">
-                    <p>Notable participations and contributions over years</p>
-                </div><!--//intro-->
-                <div class="item">
-                    <span class="project-title"><a href="//www.freebsd.org">FreeBSD</a></span> - <span class="project-tagline">Berkeley Software Distributon (BSD) operating systems.</span>
-	    	</div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="//www.paramiko.org">Paramiko</a></span> - <span class="project-tagline">Python SSH implementation.</span>
-                </div><!--//item-->
-            </section><!--//section-->
-            
-        </div><!--//main-body-->
-    </div>
- 
-    <footer class="footer">
-        <div class="text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-		<small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small><br/>
-		<small class="copyright">Hosted with <i class="fa fa-heart"></i> using <a href="//www.freebsd.org" target="_blank">FreeBSD</a> UNIX</small><br/>
-		<!-- IPv6-test.com button BEGIN -->
-		<a href='//ipv6-test.com/validate.php?url=referer'><img src='assets/images/button-ipv6-80x15.png' alt='ipv6 ready' title='ipv6 ready' border='0' /></a>
-		<!-- IPv6-test.com button END -->
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
-    <!-- Google Analytics js -->
-    <script type="text/javascript" src="assets/js/ga.js"></script>
+                    <hr/>
+
+                    <div class="whoami">
+                        <p> Hey, I'm Sofian. I'm currently working as <a
+                                href="https://en.wikipedia.org/wiki/Site_Reliability_Engineering">Site Reliability
+                                Engineer</a> based in Dublin, Ireland.
+                        <p>
+                            I worked on multiple range of projects, from writing software to build product, to automate and
+                            operate internet hosting, financial information systems and cloud-based infrastructure businesses.
+                        </p>
+                        <p>
+                            I enjoy to be part of the Free and open-source software philosophy of sharing free codes, ideas and projects since 2008.
+                            As an hobbyist free software developer, I'm contributing to the <a href="https://freebsd.org">FreeBSD</a> project as a committer.
+                        </p>
+                        <p>
+                            My main topics of interests are about <a href="https://en.wikipedia.org/wiki/Unix">UNIX</a>,
+                            <a href="https://en.wikipedia.org/wiki/Linux">Linux</a>, Operating
+                            systems, Software programming, Distributed systems, Infrastructure and expanding my knowledge around Reliability and
+                            Resiliency of internet-based services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br>
+                <p><small class="text-muted">© 2019 Sofian Brabez</small></p>
+            </div>
+        </div>
+    </footer>
 </body>
-</html> 
+
+</html>
