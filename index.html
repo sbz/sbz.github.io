@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -8,25 +8,16 @@
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
     <title>sbz</title>
 
-    <!-- Twitter Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
-
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet"
         integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
 
-    <!-- 6dev.net -->
-    <!-- Style -->
+    <!-- Schematic Style -->
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
-    <!-- Google Analytics -->
-    <script src="./assets/js/ga.js"></script>
 
     <!-- Common meta markup -->
     <meta name="author" content="sbz" />
-    <meta name="description" content="Personal website" />
+    <meta name="description" content="Embedded Software Engineer - FreeBSD Contributor - Systems Programming" />
 
     <!-- Facebook Open Graph markup -->
     <meta property="og:title" content="sbz" />
@@ -38,136 +29,175 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@sbrabez" />
     <meta name="twitter:creator" content="@sbrabez" />
-    <meta name="twitter:title" content="sbrabez" />
+    <meta name="twitter:title" content="sbz" />
     <meta name="twitter:image" content="./assets/images/samurai-profile.png" />
 
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-2 order-md-last text-center">
-                    <a href="./assets/images/samurai-profile.png" target="_blank">
-                        <img src="./assets/images/samurai-profile.png" alt="sbz" class="avatar">
+
+    <div class="main-container">
+        <header>
+            <h1 class="site-title">sbz</h1>
+            <p class="tagline">Embedded Software Engineer</p>
+            <p class="career-goal">🚀 Transitioning from SRE → Full-time Embedded/Firmware Engineering</p>
+        </header>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-pic-container">
+                <a href="./assets/images/samurai-profile.png" target="_blank">
+                    <img src="./assets/images/samurai-profile.png" alt="sbz" class="profile-pic">
+                </a>
+            </div>
+
+            <div class="content-area">
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://github.com/sbz" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://gitlab.com/sbz" target="_blank" class="social-link" title="GitLab">
+                        <i class="fab fa-gitlab"></i> GitLab
+                    </a>
+                    <a href="https://bitbucket.com/sbz" target="_blank" class="social-link" title="Bitbucket">
+                        <i class="fab fa-bitbucket"></i> Bitbucket
+                    </a>
+                    <a href="https://linkedin.com/in/sbrabez" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="mailto:[undisclosed]" target="_blank" class="social-link" title="Email">
+                        <i class="fa fa-envelope"></i> Email
+                    </a>
+                    <a href="https://stackoverflow.com/users/5455517/sbz" target="_blank" class="social-link" title="Stack Overflow">
+                        <i class="fab fa-stack-overflow"></i> Stack Overflow
+                    </a>
+                    <a href="https://wiki.freebsd.org/SofianBrabez" target="_blank" class="social-link" title="FreeBSD Wiki">
+                        <i class="fab fa-freebsd"></i> FreeBSD
+                    </a>
+                    <a href="https://news.ycombinator.com/user?id=sbz" target="_blank" class="social-link" title="Hacker News">
+                        <i class="fab fa-hacker-news"></i> Hacker News
+                    </a>
+                    <a href="https://lobste.rs/~sbz" target="_blank" class="social-link" title="Lobsters">
+                        🦞 Lobsters
+                    </a>
+                    <a href="https://twitch.tv/sbrabez" target="_blank" class="social-link" title="Twitch">
+                        <i class="fab fa-twitch"></i> Twitch
+                    </a>
+                    <a href="https://www.youtube.com/@sbrabez" target="_blank" class="social-link" title="YouTube">
+                        ▶️ YouTube
                     </a>
                 </div>
 
-                <!-- Social links -->
-                <div class="col-md-8 order-md-first">
-                    <h1><a href="/">sbz</a></h1>
-                    <p>
-                        <a href="https://github.com/sbz" target="_blank">
-                            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://gitlab.com/sbz" target="_blank">
-                            <i class="fab fa-gitlab fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://bitbucket.com/sbz" target="_blank">
-                            <i class="fab fa-bitbucket fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/sbrabez" target="_blank">
-                            <i class="fab fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="mailto:[undisclosed]" target="_blank">
-                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://stackoverflow.com/users/5455517/sbz" target="_blank">
-                            <i class="fab fa-stack-overflow fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://wiki.freebsd.org/SofianBrabez" target="_blank">
-                            <i class="fab fa-freebsd fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://news.ycombinator.com/user?id=sbz" target="_blank">
-                            <i class="fab fa-hacker-news fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://lobste.rs/~sbz" target="_blank">
-                            <i class="fab fa-lobster fa-2x">
-                                <img src="./assets/images/lobster.png" style="height:32px;width:32px">
-                            </i>
-                        </a>
-                        <!--
-                        <a href="https://hackerrank.com/profile/sbrabez" target="_blank">
-                            <i class="fab fa-hackerrank fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://twitter.com/sbrabez" target="_blank">
-                            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sbrabez" target="_blank">
-                            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://pinterest.com/sbrabez" target="_blank">
-                            <i class="fab fa-pinterest fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.quora.com/profile/Sofian-Brabez" target="_blank">
-                            <i class="fab fa-quora fa-2x" aria-hidden="true"></i>
-                        </a>
-                        -->
-                        <a href="https://twitch.tv/sbrabez" target="_blank">
-                            <i class="fab fa-twitch fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@sbrabez" target="_blank">
-                            <i class="fab">
-                                <img src="./assets/images/youtube.png" style="height:32px;width:32px;margin-bottom:14px">
-                            </i>
-                        </a>
+                <div class="bio-text">
+                    <p style="margin-top: 12px;">
+                        <span class="highlight">sbz</span> | Software Engineer transitioning from SRE to <span class="highlight">Embedded &amp; Firmware Development</span>.
+                        Passionate about low-level software, OS internals, and open source.
                     </p>
 
-                    <hr/>
-
-                    <div class="whoami">
-                        <p>Hey there, I'm Sof known online as sbz or sbrabez. I am a FOSS enthusiast with past
-                         experiences working as <a href="https://en.wikipedia.org/wiki/Site_Reliability_Engineering">Site Reliability
-                                Engineer</a>, <a href="https://en.wikipedia.org/wiki/Software_engineer">Software Engineer</a>
-                            and <a href="https://en.wikipedia.org/wiki/Systems_engineering">Systems
-                                Engineer</a> and <a href="https://en.wikipedia.org/wiki/Computer_security">Computer Security</a>.
-                        </p>
-                        <!--p>
-                            Hosted code <a href="https://git.6dev.net">repos</a> area and
-                            <a href="https://people.freebsd.org/~sbz">FreeBSD</a> area</p>
-                        <p-->
-                        My topics of interests are
-                        <ul>
-                            <li>
-                            <a href="https://www.freebsd.org">FreeBSD</a>,
-                            <a href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution">BSD</a>,
-                            <a href="https://en.wikipedia.org/wiki/Unix">UNIX</a>,
-                            <a href="https://en.wikipedia.org/wiki/Linux">Linux</a>
-                            </li>
-                            <li>Operating systems development, Embedded systems, Electronics and Hacking</li>
-                            <li>Software, Algorithms, System programming</li>
-                            <li>Security, Storage, Infrastructure</li>
-                            <li>Kernel, Device driver programming, 802.11x Wireless</li>
-                        </ul>
-                        </p>
-                        <p>
-                            I'm currently based in <a href="https://en.wikipedia.org/wiki/Toulouse">Toulouse,
-                            France</a>.
-                        </p>
-                        <p>
-                            I'm passionated about UNIX systems programming and I
-                            generally use C, Python, bash and lately <strike>Go</strike> Rust
-                            programming languages.
-                        </p>
+                    <div class="career-box">
+                        <p>🎯 <strong>Seeking:</strong> Firmware, Device Drivers, SoC, RTOS, Bare-metal</p>
+                        <p class="subtitle">Open to opportunities worldwide • Remote-friendly</p>
                     </div>
+
+                    <div class="section-header">Skills</div>
+                    <ul>
+                        <li><span class="highlight">Current:</span> C, Python, Bash, Rust • FreeBSD, Linux • SRE, CI/CD • TCP/IP, Security • GCC, Clang, LLVM, GDB, Makefile, Cross-compilation</li>
+                        <li><span class="highlight">Developing:</span> Rust (no_std), ARM ASM • ARM Cortex-M/R/A, RISC-V • I2C, SPI, UART, USB • RTOS, Bare-metal, HAL, U-Boot • Cryptography • FPGA, Electronics, KiCad, Circuit Design</li>
+<li><span class="highlight">Hardware:</span> ESP32, Raspberry Pi (2/3/5), Pine64 (Rockchip), STM32 Nucleo, 96Boards i.MX7</li>
+                    </ul>
+
+                    <div class="section-header">Open Source</div>
+                    <p style="margin-bottom: 8px;">
+                        Contributor to <span class="highlight">FreeBSD</span>, <span class="highlight">paramiko</span>, <span class="highlight">dmidecode</span>, <span class="highlight">libssh2</span>.
+                    </p>
+
+                    <div class="section-header">Location</div>
+                    <p>Toulouse, France</p>
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <div class="text-center">
-            <a href="https://ipv6-test.com/validate.php?url=6dev.net">
-                <img src="./assets/images/button-ipv6-80x15.png"
-                alt="ipv6 ready" title="ipv6 ready" border='0' />
-            </a>
+
+        <!-- Projects Section -->
+        <div class="panel">
+            <div class="panel-header">Projects</div>
+            <div class="panel-content">
+                <ul class="projects-list">
+                    <li>
+                        <a href="https://github.com/sbz/rust-embedded" target="_blank" class="project-link">
+                            <span class="project-name">🦀 rust-embedded</span>
+                            <span class="project-lang">Rust</span>
+                        </a>
+                        <p class="project-desc">Embedded Rust projects and bare-metal experiments</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sbz/elfdbg" target="_blank" class="project-link">
+                            <span class="project-name">🔍 elfdbg</span>
+                            <span class="project-lang">Rust</span>
+                            <span class="project-stars">⭐ 8</span>
+                        </a>
+                        <p class="project-desc">ELF debug sections utility (Rust rewrite)</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sbz/freebsd-commands" target="_blank" class="project-link">
+                            <span class="project-name">📦 freebsd-commands</span>
+                            <span class="project-lang">C</span>
+                            <span class="project-stars">⭐ 221</span>
+                        </a>
+                        <p class="project-desc">FreeBSD commands collection</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sbz/freebsd-ports" target="_blank" class="project-link">
+                            <span class="project-name">📦 freebsd-ports</span>
+                            <span class="project-lang">C</span>
+                        </a>
+                        <p class="project-desc">FreeBSD ports collection</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sbz/android-sysinfo" target="_blank" class="project-link">
+                            <span class="project-name">📱 android-sysinfo</span>
+                            <span class="project-lang">C</span>
+                            <span class="project-stars">⭐ 16</span>
+                        </a>
+                        <p class="project-desc">Android system information utility</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sbz/keygen" target="_blank" class="project-link">
+                            <span class="project-name">🔑 keygen</span>
+                            <span class="project-lang">C</span>
+                            <span class="project-stars">⭐ 16</span>
+                        </a>
+                        <p class="project-desc">UNIX keygen with 90's demoscene style</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <br>
-                <p><small class="text-muted">© 2007-2026 sbz</small></p>
+    </div>
+
+    <footer>
+        <div class="title-block">
+            <div class="title-cell label">Author</div>
+            <div class="title-cell value">sbz</div>
+            <div class="title-cell label">Date</div>
+            <div class="title-cell value">2026</div>
+
+            <div class="title-cell label">Title</div>
+            <div class="title-cell large">Embedded Software Engineer</div>
+
+            <div class="title-cell label">Sheet</div>
+            <div class="title-cell value">1 of 1</div>
+
+            <div class="title-cell copyright">
+                © 2007-2026 sbz<br/>
+                <span class="ipv6-badge">
+                    <a href="https://ipv6-test.com/validate.php?url=6dev.net">
+                        <img src="./assets/images/button-ipv6-80x15.png" alt="IPv6 ready" title="IPv6 ready" />
+                    </a>
+                </span>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
