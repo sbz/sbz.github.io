@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <meta name="description" content="{% block description %}{{ config.description }}{% endblock description %}" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet"
+        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+
+    <!-- Theme: matches 6dev.net -->
+    <link href="{{ get_url(path='blog.css') }}" rel="stylesheet" type="text/css" />
+
+    {% block extra_head %}{% endblock extra_head %}
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="{{ get_url(path='@/_index.md') }}">
+            <span class="title">sbz</span>
+            <span class="subtitle">blog @ 6dev.net</span>
+        </a>
+        <a class="back-link" href="https://6dev.net/"><i class="fa fa-arrow-left"></i> 6dev.net</a>
+    </header>
+
+    <main class="content">
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer>
+        <span>© 2007-2026 sbz</span> &nbsp;·&nbsp;
+        <a href="https://ipv6-test.com/validate.php?url=6dev.net">IPv6 Ready</a>
+    </footer>
+</body>
+
+</html>

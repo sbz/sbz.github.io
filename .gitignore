@@ -1,0 +1,5 @@
+# Zola build output (produced by CI, committed never)
+blog/public/
+
+# local staging for assemble step
+/public/

@@ -1,0 +1,18 @@
+base_url = "https://6dev.net/blog/"
+title = "sbz blog"
+description = "Notes on embedded systems, firmware, Rust and low-level software"
+default_language = "en"
+build_search_index = false
+compile_sass = true
+
+taxonomies = []
+
+# Drafts are never rendered into public/ unless --drafts is passed.
+# `zola serve` shows them locally by default for preview.
+# Posts that temporarily need to disappear: set draft = true in frontmatter.
+[markdown.highlighting]
+theme = "github-light"
+
+[extra]
+author = "sbz"
+github = "https://github.com/sbz"

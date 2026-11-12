@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}{{ config.title }}{% endblock title %}
+{% block description %}{{ config.description }}{% endblock description %}
+{% block content %}
+{% for page in paginator.pages %}
+<article class="post-card">
+    <span class="post-date">{{ page.date }}</span>
+    <h2 class="post-title"><a href="{{ page.permalink }}">{{ page.title }}</a></h2>
+    {% if page.description %}<p class="post-excerpt">{{ page.description }}</p>{% endif %}
+</article>
+{% endfor %}
+
+<nav class="pagination">
+    {% if paginator.previous %}<a href="{{ paginator.previous }}"><i class="fa fa-arrow-left"></i> newer</a>{% endif %}
+    {% if paginator.next %}<a href="{{ paginator.next }}">older <i class="fa fa-arrow-right"></i></a>{% endif %}
+</nav>
+{% endblock content %}

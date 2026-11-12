@@ -1,0 +1,53 @@
+name: deploy-blog
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Deploy one live version at a time; cancel superseded runs.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola
+
+      - name: Build blog
+        working-directory: blog
+        run: zola build
+
+      - name: Assemble site root (homepage + blog/)
+        run: |
+          # trash pre-existing output in case of an in-repo build
+          rm -rf public
+          mkdir -p public/blog
+          cp -r index.html assets CNAME public/
+          cp -r blog/public/. public/blog/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy blog to GitHub Pages
+        uses: actions/deploy-pages@v4
